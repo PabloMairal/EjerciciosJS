@@ -15,7 +15,7 @@ export function countdown(relojCountdown) {
 
     $relojCountdown.innerHTML = `Faltan: ${dias} días, ${horas} horas, ${minutos} minutos y ${segundos} segundos.`;
 
-    if (differenceInMilliseconds < 0) {
+    if (diferencia < 0) {
       clearInterval(countdownTempo);
       $relojCountdown.innerHTML = `Felicidades!`;
     }
