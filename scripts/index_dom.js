@@ -3,7 +3,7 @@ import hamburgerMenu from "./hamburgerMenu.js";
 import { alarma } from "./alarma.js";
 import { moverPelota } from "./teclado.js";
 import { countdown } from "./countdown.js";
-
+import { botonTop } from "./botonTop.js";
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
@@ -11,6 +11,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   relojDigital("#reloj", "#activar-reloj", "#desactivar-reloj");
   alarma("#activar-alarma", "#desactivar-alarma", "assets/alarma.mp3");
   countdown("#relojCountdown");
+  botonTop(".botonTop");
 });
 
 d.addEventListener("keydown", (e) => {
